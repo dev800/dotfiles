@@ -23,7 +23,7 @@
   "editor.suggest.localityBonus": true,
   "editor.wordWrapColumn": 150,
   "eslint.options": {
-    "configFile": "~/.vscode-insiders/.eslintrc.js",
+    "configFile": "/Users/happy/.dotfiles/lintrc/eslintrc.js",
   },
   "eslint.alwaysShowStatus": true,
   "eslint.autoFixOnSave": true,
