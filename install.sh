@@ -184,11 +184,31 @@ function usage(){
   echo '    - vim_plugins_ycm'
   echo '    - vscode'
   echo '    - vscode_insiders'
+  echo '    - yarn'
+  echo '    - lintrc'
   echo '    - zsh_rc'
   echo '    - zsh_plugins_fasd'
   echo '    - zsh_plugins_fzf'
   echo '    - zsh_plugins_thefuck'
   printf "$dot_color_none\n"
+}
+
+function install_yarn(){
+  npm install yarn -g
+}
+
+function install_lintrc(){
+  yarn global add eslint
+  yarn global add eslint-plugin-vue
+  yarn global add eslint-plugin-vue
+  yarn global add eslint-plugin-standard
+  yarn global add eslint-plugin-promise
+  yarn global add eslint-config-standard
+  yarn global add eslint-plugin-import
+  yarn global add eslint-plugin-node
+  yarn global add babel-eslint
+
+  success "Successfully installed lintrc."
 }
 
 function install_astyle_rc(){
@@ -1099,6 +1119,12 @@ else
         ;;
       vscode_insiders)
         install_vscode_insiders
+        ;;
+      yarn)
+        install_yarn
+        ;;
+      lintrc)
+        install_lintrc
         ;;
       zsh_rc)
         install_zsh_rc
