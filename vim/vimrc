@@ -1,7 +1,7 @@
 " =============================================================================
-" Author:  Treri
-" Email: treri.liu@gmail.com
-" Website: http://iSay.me
+" Author:  Dev800
+" Email: dev800@helloworld.com
+" Website: http://github.com/dev800
 " Description: 适合自己使用的vimrc文件.
 " =============================================================================
 
@@ -404,8 +404,9 @@ else
 endif
 
 " switch to the *scratch* buffer
-nnoremap <leader>bs :enew<CR>
-nnoremap <leader>bn :bnext<CR>
+"" nnoremap <leader>bs :enew<CR>
+"" nnoremap <leader>bn :bnext<CR>
+
 " like spacemacs `SPC b b` to switch buffer
 nnoremap <leader>bb :bnext<CR>
 nnoremap <leader>bp :bprevious<CR>

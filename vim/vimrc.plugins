@@ -6,7 +6,7 @@ endif
 
 if !exists('g:dotvim_groups')
   " more options: ['explorer', 'motion', 'writing', 'git', 'tmux', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'snippets', 'youcompleteme']
-  let g:dotvim_groups = []
+  let g:dotvim_groups = ['explorer', 'themes', 'motion', 'writing', 'git', 'tmux', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'snippets', 'youcompleteme']
 endif
 
 "" core themes
@@ -33,7 +33,7 @@ if !count(g:dotvim_groups, '-interface')
   " ==> vim-airline
   Plug 'vim-airline/vim-airline'
     " set airline to use powerline symbols
-    let g:airline_powerline_fonts = 1
+    let g:airline_powerline_fonts = 0
     let g:airline#extensions#tabline#enabled = 1
     " Show just the filename
     " let g:airline#extensions#tabline#fnamemod = ':t'
@@ -55,6 +55,11 @@ endif
 
 if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-explorer'))
     \ || count(g:dotvim_groups, 'explorer')
+  Plug 'mileszs/ack.vim'
+  Plug 'corntrace/bufexplorer'
+  Plug 'gregsexton/gitv'
+  Plug 'tpope/vim-fugitive'
+
   Plug 'schickling/vim-bufonly'
     nnoremap <Leader>bK :Bufonly<CR>
 
@@ -105,7 +110,8 @@ if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-explorer'))
     nnoremap <Leader>sj :CtrlPFunky<CR>
 
   Plug 'scrooloose/nerdtree'
-    let NERDTreeIgnore = ['\.DS_Store$', '\.git$', '\~$']
+    " let NERDTreeIgnore = ['\.DS_Store$', '\.git$', '\~$']
+    let NERDTreeIgnore = ['\.DS_Store$', '\~$']
     let NERDTreeShowHidden = 1
     let NERDTreeShowLineNumbers = 1
     nmap <leader>ft :NERDTreeToggle<CR>
@@ -127,6 +133,23 @@ if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-explorer'))
     " CD......Change tree root to the CWD
     " I.......切换隐藏文件是否显示
     " B.......切换书签隐藏显示
+    let NERDTreeShowHidden=1
+    let NERDTreeCascadeSingleChildDir = 0
+    let NERDTreeCascadeOpenSingleChildDir = 0
+
+    let g:auto_save_write_all_buffers = 1
+    let g:ackprg="ag --nogroup --nocolor --column" 
+
+    map <F8> :NERDTreeToggle<CR>
+    map <F7> :BufExplorer<CR>
+    noremap <silent>be :BufExplorer<CR>
+    noremap <silent>nf :NERDTreeFind<CR>
+    noremap <silent>nt :NERDTree<CR>
+    noremap <silent>gb :Gblame<CR>
+    noremap <silent>sp :split<CR>
+    noremap <silent>vs :vsplit<CR>
+    noremap <silent>mf :Autoformat<CR>
+    noremap <silent>cm :CommandT<CR>
 
   if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-git'))
       \ || count(g:dotvim_groups, 'git')
@@ -441,6 +464,19 @@ if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-js'))
 
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
+  Plug 'elixir-lang/vim-elixir'
+  Plug 'kbrw/neovim-elixir'
+  Plug 'avdgaag/vim-phoenix'
+  Plug 'elzr/vim-json'
+  Plug 'fatih/vim-go'
+  Plug 'tpope/vim-haml'
+  Plug 'moll/vim-node'
+  Plug 'rhysd/vim-crystal'
+  Plug 'solarnz/thrift.vim'
+  Plug 'derekwyatt/vim-scala'
+  Plug 'hail2u/vim-css3-syntax'
+  Plug 'kchmck/vim-coffee-script'
+  Plug 'posva/vim-vue'
 
   " javascript ES6 support, only enable this in pure javascript files,
   Plug 'othree/yajs.vim', {'for': ['javascript', 'javascript.jsx']}

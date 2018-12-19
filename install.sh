@@ -724,7 +724,7 @@ function install_vim_plugins(){
     tip "Maybe you should install the font *Source Code Pro* locally."
   fi;
 
-  tip "In order to use powerline symbols with airline in vim, please set your terminal to use the font *Source Code Pro*"
+  success "In order to use powerline symbols with airline in vim, please set your terminal to use the font *Source Code Pro*"
 }
 
 function util_must_vimrc_plugins_exists(){
