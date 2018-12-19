@@ -113,4 +113,9 @@
         "command": "-redo",
         "when": "textInputFocus && !editorReadonly"
     },
+    {
+        "key": "enter",
+        "command": "acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
+    },
 ]

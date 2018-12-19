@@ -58,4 +58,8 @@
   },
   "editor.formatOnSave": true,
   "editor.formatOnSaveTimeout": 600,
+  "elixirLS.mixEnv": "dev",
+  "elixirLS.dialyzerEnabled": true,
+  "elixirLS.dialyzerWarnOpts": [],
+  "editor.suggest.shareSuggestSelections": true,
 }
