@@ -459,9 +459,7 @@ endif
 if (count(g:dotvim_groups, 'common') && !count(g:dotvim_groups, '-js'))
     \ || count(g:dotvim_groups, 'js')
   Plug 'leafgarland/typescript-vim'
-
   Plug 'kchmck/vim-coffee-script'
-
   Plug 'pangloss/vim-javascript'
   Plug 'mxw/vim-jsx'
   Plug 'elixir-lang/vim-elixir'
@@ -553,8 +551,8 @@ if count(g:dotvim_groups, 'youcompleteme')
   if has('nvim') || has('patch584') || has("gui_macvim")
     Plug 'Valloric/YouCompleteMe'
 
-    let g:ycm_key_list_select_completion=['<C-n>', '<Down>']
-    let g:ycm_key_list_previous_completion=['<C-p>', '<Up>']
+    let g:ycm_key_list_select_completion=['<Tab>', '<Down>']
+    let g:ycm_key_list_previous_completion=['<Enter>', '<Up>']
     let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
     let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符串中的文字也会被收入补全
     let g:ycm_seed_identifiers_with_syntax=1   "语言关键字补全
