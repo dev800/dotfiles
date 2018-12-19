@@ -5,8 +5,8 @@ if filereadable(expand("~/.vimrc.plugins.before"))
 endif
 
 if !exists('g:dotvim_groups')
-  " more options: ['explorer', 'motion', 'writing', 'git', 'tmux', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'snippets', 'youcompleteme']
-  let g:dotvim_groups = ['explorer', 'themes', 'motion', 'writing', 'git', 'tmux', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'snippets', 'youcompleteme']
+  " let g:dotvim_groups = ['explorer', 'themes', 'motion', 'writing', 'git', 'tmux', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'snippets', 'youcompleteme']
+  let g:dotvim_groups = ['explorer', 'themes', 'motion', 'writing', 'git', 'html', 'css', 'js', 'php', 'markdown', 'nginx', 'nfo', 'fcitx', 'matchtag', 'youcompleteme']
 endif
 
 "" core themes
