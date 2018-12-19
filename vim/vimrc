@@ -26,6 +26,8 @@ set modeline
 let mapleader="\<Space>"
 let g:mapleader="\<Space>"
 
+let g:vim_json_syntax_conceal = 0
+
 " =============================================================================
 " Encoding and Locale
 " =============================================================================

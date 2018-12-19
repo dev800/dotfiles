@@ -1,30 +1,116 @@
-// Place your key bindings in this file to overwrite the defaults
-[{
-  "key": "cmd+y",
-  "command": "redo",
-  "when": "isMac"
-}, {
-  "key": "ctrl+y",
-  "command": "redo",
-  "when": "isWindows"
-}, {
-  "key": "ctrl+shift+j",
-  "command": "workbench.action.terminal.focusPrevious",
-  "when": "terminalFocus"
-}, {
-  "key": "ctrl+shift+k",
-  "command": "workbench.action.terminal.focusNext",
-  "when": "terminalFocus"
-}, {
-  "key": "ctrl+shift+u",
-  "command": "workbench.action.terminal.kill",
-  "when": "terminalFocus"
-}, {
-  "key": "ctrl+shift+n",
-  "command": "workbench.action.terminal.new",
-  "when": "terminalFocus"
-}, {
-  "key": "ctrl+`",
-  "command": "workbench.action.terminal.focus",
-  "when": "!terminalFocus"
-}]
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "alt+k",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+l",
+        "command": "workbench.view.explorer"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer"
+    },
+    {
+        "key": "cmd+j",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles"
+    },
+    {
+        "key": "cmd+i",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "cmd+m",
+        "command": "editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+j",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "tab",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+m",
+        "command": "workbench.action.splitEditorDown"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.splitEditorLeft"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "alt+i",
+        "command": "workbench.action.splitEditorUp"
+    },
+    {
+        "key": "cmd+u",
+        "command": "editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "f12",
+        "command": "-editor.action.revealDefinition",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+    {
+        "key": "cmd+y",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+z",
+        "command": "-redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+]

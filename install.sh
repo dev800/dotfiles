@@ -183,6 +183,7 @@ function usage(){
   echo '    - vim_plugins_snippets'
   echo '    - vim_plugins_ycm'
   echo '    - vscode'
+  echo '    - vscode_insiders'
   echo '    - zsh_rc'
   echo '    - zsh_plugins_fasd'
   echo '    - zsh_plugins_fzf'
@@ -881,6 +882,9 @@ function install_vscode(){
   lnif "$APP_PATH/vscode/keybindings.json" \
        "$vscode_path/User/keybindings.json"
 
+  lnif "$APP_PATH/lintrc/eslintrc.js" \
+       "$vscode_path/User/eslintrc.js"
+
   success "Successfully installed vscode configs."
 
   install_fonts_source_code_pro
@@ -909,6 +913,9 @@ function install_vscode_insiders(){
 
   lnif "$APP_PATH/vscode/keybindings.json" \
        "$vscode_path/User/keybindings.json"
+
+  lnif "$APP_PATH/lintrc/eslintrc.js" \
+       "$vscode_path/User/eslintrc.js"
 
   success "Successfully installed vscode configs."
 

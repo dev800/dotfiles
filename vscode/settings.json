@@ -1,50 +1,61 @@
-// Place your settings in this file to overwrite the default settings
 {
-  //-------- Editor configuration --------
-  "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
-  "editor.fontSize": 13,
-  "editor.rulers": [80, 100],
-  "editor.tabSize": 2,
-  "editor.find.seedSearchStringFromSelection": false,
-  "editor.wordWrap": "on",
-  "diffEditor.ignoreTrimWhitespace": false,
-
-  "emmet.includeLanguages": {
-    "vue-html": "html",
-    "vue": "html"
-  },
-  "emmet.triggerExpansionOnTab": true,
-
-  "workbench.startupEditor": "none",
-  "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.colorTheme": "Monokai",
+  "workbench.startupEditor": "newUntitledFile",
   "workbench.iconTheme": "vscode-icons",
-
-  "window.restoreWindows": "none",
-
-  "terminal.integrated.fontSize": 13,
-  "terminal.integrated.fontWeightBold": "normal",
-  "terminal.integrated.shell.windows": "C:\\Windows\\Sysnative\\bash.exe",
-  "terminal.integrated.shellArgs.windows": ["-i"],
-  "terminal.integrated.shellArgs.osx": ["-l"],
-
-  "gitlens.codeLens.enabled": false,
-
-  "gitProjectManager.baseProjectsFolders": [
-    "~/Projects"
+  "workbench.colorTheme": "Monokai",
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "markdown.preview.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": true,
+    "strings": true
+  },
+  "editor.tabCompletion": "off",
+  "editor.hover.delay": 200,
+  "editor.smoothScrolling": true,
+  "editor.tabSize": 2,
+  "elixir.autoSpawnElixirSenseServers": false,
+  "elixir.useElixirSense": false,
+  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggest.localityBonus": true,
+  "editor.wordWrapColumn": 150,
+  "eslint.options": {
+    "configFile": "~/.vscode-insiders/.eslintrc.js",
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.packageManager": "yarn",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "html"
   ],
-  "gitProjectManager.storeRepositoriesBetweenSessions": true,
-  "gitProjectManager.ignoredFolders": [
-    "node_modules"
-  ],
-
-  "vim.useSystemClipboard": true,
-  "vim.leader": "<space>",
-  "vim.easymotion": true,
-  "vim.surround": true,
-  "vim.sneak": true,
-  "vim.easymotionMarkerFontFamily": "Source Code Pro",
-  "vim.sneakUseIgnorecaseAndSmartcase": true,
-
-  "vsicons.projectDetection.disableDetect": true,
+  "vim.textwidth": 150,
+  "workbench.editor.labelFormat": "medium",
+  "editor.wordWrap": "on",
+  "window.zoomLevel": -1,
+  "vetur.format.defaultFormatter.js": "prettier-eslint",
+  "vetur.format.defaultFormatterOptions": {
+    "prettier": {
+      "semi": false,
+      "singleQuote": true,
+      "bracketSpacing": true,
+      "jsxBracketSameLine": true
+    },
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    },
+  },
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveTimeout": 600,
 }
