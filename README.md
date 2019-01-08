@@ -36,7 +36,7 @@ dotfiles
 ## Installation
 
 ```sh
-git clone --depth 1 https://github.com/Wyntau/dotfiles.git ~/.dotfiles
+git clone --depth 1 https://github.com/dev800/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
