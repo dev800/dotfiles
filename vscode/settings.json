@@ -37,7 +37,7 @@
   "vim.textwidth": 150,
   "workbench.editor.labelFormat": "medium",
   "editor.wordWrap": "on",
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "vetur.format.defaultFormatterOptions": {
     "prettier": {
@@ -56,7 +56,6 @@
       "sortAttributes": false
     },
   },
-  "editor.formatOnSave": true,
   "editor.formatOnSaveTimeout": 600,
   "elixirLS.mixEnv": "dev",
   "elixirLS.dialyzerEnabled": false,
