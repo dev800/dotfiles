@@ -18,15 +18,13 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   "elixir.autoSpawnElixirSenseServers": false,
-  "elixir.useElixirSense": false,
-  "editor.suggestSelection": "recentlyUsedByPrefix",
+  "editor.suggestSelection": "first",
   "editor.suggest.localityBonus": true,
   "editor.wordWrapColumn": 150,
   "eslint.options": {
     "configFile": "/Users/happy/.dotfiles/lintrc/eslintrc.js",
   },
   "eslint.alwaysShowStatus": true,
-  "eslint.autoFixOnSave": true,
   "eslint.packageManager": "yarn",
   "eslint.validate": [
     "javascript",
