@@ -61,4 +61,6 @@
   "elixirLS.dialyzerEnabled": false,
   "elixirLS.dialyzerWarnOpts": [],
   "editor.suggest.shareSuggestSelections": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
 }
