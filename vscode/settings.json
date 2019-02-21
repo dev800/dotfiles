@@ -1,6 +1,7 @@
 {
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Monokai",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -17,10 +18,12 @@
   "editor.hover.delay": 200,
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
-  "elixir.autoSpawnElixirSenseServers": false,
   "editor.suggestSelection": "first",
   "editor.suggest.localityBonus": true,
   "editor.wordWrapColumn": 150,
+  "editor.formatOnSaveTimeout": 600,
+  "editor.suggest.shareSuggestSelections": true,
+  "editor.wordWrap": "on",
   "eslint.options": {
     "configFile": "/Users/happy/.dotfiles/lintrc/eslintrc.js",
   },
@@ -34,7 +37,6 @@
   ],
   "vim.textwidth": 150,
   "workbench.editor.labelFormat": "medium",
-  "editor.wordWrap": "on",
   "window.zoomLevel": -1,
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "vetur.format.defaultFormatterOptions": {
@@ -54,11 +56,11 @@
       "sortAttributes": false
     },
   },
-  "editor.formatOnSaveTimeout": 600,
   "elixirLS.mixEnv": "dev",
-  "elixirLS.dialyzerEnabled": false,
   "elixirLS.dialyzerWarnOpts": [],
-  "editor.suggest.shareSuggestSelections": true,
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
+  "workbench.iconTheme": "vscode-icons",
+  "elixirLS.dialyzerEnabled": false,
+  "elixirLS.projectDir": ".",
 }
